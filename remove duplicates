@@ -1,0 +1,24 @@
+
+int main() {
+    int array[6] = { 2,3,4,2,5,5 };
+    int dup_arr[6];
+    int k = 0;
+    
+    for (int i = 0; i < 6; i++) {
+        
+        bool val = true;
+        int num = array[i];
+        for (int j = 0; j < 6; j++) {
+ 
+            if (num == array[j] and j!=i) {
+                val = false;
+            }
+        }
+        if (val == true) {
+            dup_arr[k] = array[i];
+            k++;
+
+        }
+    }
+    print(dup_arr, k);
+}
