@@ -1,0 +1,23 @@
+
+int main() {
+    int array[6] = { 2,37,1,50,54,49 };
+    int k = 2;
+    int doub = k * 2;
+    bool val = false;
+    bool exist = false;
+    for (int i = 0; i < 6; i++) {
+        if (array[i] == k) {
+            val = true;
+        }
+        else if (val = true and array[i] == doub) {
+            exist = true;
+            cout << "double exists and index is: " << i+1;
+            break;
+            
+        }
+    
+    }
+    if (exist == false){
+    cout << "it does not";
+    }
+}
