@@ -1,0 +1,35 @@
+
+int main()
+{
+    int n;
+    cin >> n;
+    int* array{ new int[n] };
+    int k;
+    for (int i = 0; i < n; i++) {
+        cin >> k;
+        array[i] = 
+            k;
+    }
+    //print(array, n);
+    cout << "element you want to remove:";
+    int ele;
+    cin >> ele;
+    cout <<endl;
+    int index = 0;
+    for (int i = 0; i < n; i++) {
+        if (array[i] != ele) {
+            //cout << "before:" << endl << array[index] << ":" << array[i]<<endl;
+            array[index] = array[i];
+            //cout << "after:" << endl << array[index] <<":" << array[i]<<endl;
+            //cout << index<<":";
+           // cout << array[i] << " arrayindex  " << array[index] << endl;
+            index++;
+           
+
+        }
+    }
+    //array = array[:4];
+    //cout << endl <<"out:";
+    print(array, index);
+
+}*/
