@@ -1,0 +1,25 @@
+int main() {
+    int array[7] = { 1,1,4,0,2,0,0 };
+    int k = 0;
+    int arr[7];
+    for (int i = 0; i < 7; i++) {
+        arr[i] = array[i];
+    }
+    int temp;
+    for (int i = 0; i < 7; i++) {
+        temp = array[i];
+        for (int j = 0; j < 7; j++) {
+            if (temp > array[j]) {
+                int a = array[j];//2
+                array[j] = array[i];
+                array[i] = a;
+
+
+            }
+
+        }
+    }
+
+    print(array, 7);
+    
+}
