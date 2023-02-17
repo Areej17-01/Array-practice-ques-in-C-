@@ -1,0 +1,24 @@
+
+int main() {
+    int array[2] = { 1,1 };
+    int temp;
+    bool val= false;
+    for (int i = 0; i < 2; i++) {
+        bool val = false;
+        temp = i + 1;
+        //cout << i + 1 << endl;
+        for (int j = 0; j < 2; j++) {
+            //cout << i << endl;
+
+            if (temp == array[j]) {
+                
+                val = true;
+            }
+        }
+      
+        if (val == false) {
+            cout << temp << "  val:  " << val << endl;
+        }
+
+    }
+}
