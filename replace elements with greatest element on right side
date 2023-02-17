@@ -1,0 +1,20 @@
+int main() {
+
+    int array[6] = { 17,18,5,4,6,1 };
+    int temp;
+    int k = 6 - 1;
+    int arr[7];
+    for (int i = 0; i < k; i++) {
+        temp = array[i + 1];
+        for (int j = i + 2; j < k; j++) {
+            //cout << temp << "   " << array[j] << endl;
+            if (array[j] > temp) {
+                temp = array[j];
+                //cout << temp<<"   " << array[j]<<endl;
+            }
+        }
+        arr[i] = temp;
+    }
+    arr[5] = -1;
+    print(arr, k+1);
+}
