@@ -1,3 +1,5 @@
+#include <iostream>
+using namespace std;
 int max(int array[],int n) {
     int temp = array[0];
     int temp_min = array[0];
